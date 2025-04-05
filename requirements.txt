@@ -1,0 +1,14 @@
+flask
+geopandas
+duckdb
+numpy
+pandas
+gc
+os
+traceback
+re
+pyarrow.parquet
+functools
+gunicorn
+boto3
+python-dotenv 
