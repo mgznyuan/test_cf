@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CF Pages Test</title>
+</head>
+<body>
+    <h1>Cloudflare Pages Function Test</h1>
+    <p>This is the static part of the site.</p>
+    <p>Try accessing the API endpoint: <a href="/api/hello">/api/hello</a></p>
+    <script>
+        // Optional: Fetch from the API on load
+        fetch('/api/hello')
+            .then(res => res.json())
+            .then(data => {
+                const p = document.createElement('p');
+                p.textContent = 'API Response: ' + JSON.stringify(data);
+                document.body.appendChild(p);
+            })
+            .catch(err => console.error("API fetch error:", err));
+    </script>
+</body>
+</html>

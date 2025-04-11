@@ -1,0 +1,6 @@
+# wrangler.toml
+name = "cf-pages-test" # Change if desired
+compatibility_date = "2024-04-05" # Use a recent date
+
+# Define the Pages project build output directory
+pages_build_output_dir = "."
