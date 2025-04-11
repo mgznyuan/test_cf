@@ -1,5 +1,7 @@
 // functions/_worker.js
-import { Router, json } from 'itty-router';
+import { Router, error, json } from 'itty-router';
+import { tableFromIPC, RecordBatchStreamReader } from 'apache-arrow'; // <<< --- ADDED: Verify exact Arrow imports needed
+import bcrypt from 'bcryptjs'; 
 
 // Create a new router
 const router = Router();
